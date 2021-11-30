@@ -28,6 +28,10 @@ app.get('/categories', (req, res) => {
 
 })
 
+/*
+3- All jobs in a given city (sent in the querystring)
+*/
+
 app.get('/jobs', (req, res) => {
     let cities = {};
 
@@ -58,10 +62,5 @@ app.get('/:category', (req, res) => {
     res.send(jobs);
 
 })
-
-/*
-3- All jobs in a given city (sent in the querystring)
-*/
-
 
 app.listen(80);
